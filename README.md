@@ -45,13 +45,13 @@ Here’s a step-by-step breakdown of what we do in this project:
 We start by creating a SQL table with appropriate data types:
 
 CREATE TABLE zepto (
-  sku_id SERIAL PRIMARY KEY,
+  sku_id INT AUTO_INCREMENT PRIMARY KEY,
   category VARCHAR(120),
   name VARCHAR(150) NOT NULL,
-  mrp NUMERIC(8,2),
-  discountPercent NUMERIC(5,2),
+  mrp INTEGER,
+  discountPercent INTEGER,
   availableQuantity INTEGER,
-  discountedSellingPrice NUMERIC(8,2),
+  discountedSellingPrice INTEGER,
   weightInGms INTEGER,
   outOfStock BOOLEAN,
   quantity INTEGER
